@@ -8,10 +8,11 @@ import { UserProvider } from "./context/UserContext";
 
 // Import the main app component
 import App from "./App";
-import FirstPage from "./pages/FirstPage";
-import FormPage from "./pages/FormPage";
 
 // Import additional components for new routes
+import FirstPage from "./pages/FirstPage";
+import FormPage from "./pages/FormPage";
+import HomePage from "./pages/HomePage";
 import MatchPage from "./pages/MatchPage";
 
 // Requests
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
       {
         path: "/matchpage",
         element: <MatchPage />,
+        loader: getAllGladiators,
+      },
+      {
+        path: "/home",
+        element: <HomePage />,
         loader: getAllGladiators,
       },
     ],

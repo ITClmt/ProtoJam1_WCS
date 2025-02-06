@@ -1,17 +1,19 @@
 import { type ReactNode, createContext, useContext, useState } from "react";
 
-const UserContext = createContext(null as UserContextType | null);
+const UserContext = createContext<UserContextType | null>(null);
 
 export function UserProvider({ children }: { children: ReactNode }) {
-  const [userData, setUserData] = useState(null as UserData | null);
+  const [userData, setUserData] = useState<UserData>({
+    age: 25,
+    city: "Lutèce",
+    firstName: "Tototus",
+    gender: "Gladiateur",
+    gladiatorType: "Thraex",
+    preferences: "Gladiatrice",
+  });
 
   return (
-    <UserContext.Provider
-      value={{
-        userData,
-        setUserData,
-      }}
-    >
+    <UserContext.Provider value={{ userData, setUserData }}>
       {children}
     </UserContext.Provider>
   );

@@ -24,3 +24,24 @@ interface UserContextType {
   userData: UserData | null;
   setUserData: (data: UserData) => void;
 }
+
+interface User {
+  age: number;
+  biographie: string;
+  city: string;
+  firstname: string;
+  genre: string;
+  gladiatorType: string;
+  lastname: string;
+  profilePicture: string;
+  swordSize: string;
+}
+
+interface UserData {
+  age: string;
+  city: string;
+  firstName: string;
+  gender: string;
+  gladiatorType: string;
+  preferences: string;
+}
