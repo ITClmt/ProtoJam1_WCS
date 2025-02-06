@@ -33,7 +33,7 @@ export default function MatchPage() {
       </div>
       <div className="interaction">
         <Link to={"#"} className="message">
-          Impose tes règles
+          Provocatum
         </Link>
         <Link to={"#"} className="arena">
           Choissez votre arène
