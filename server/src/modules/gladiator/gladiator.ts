@@ -236,6 +236,71 @@ const gladiators = [
     profilePicture: "/assets/images/decimus_corvus.jpg",
     match: false,
   },
+  {
+    firstname: "Clement",
+    lastname: "Augustus",
+    biographie:
+      "Ancien architecte romain reconverti en gladiateur, il utilise sa connaissance des structures pour anticiper les mouvements de ses adversaires.",
+    genre: "Homme",
+    age: 28,
+    gladiatorType: "Hoplomachus",
+    city: "Narbonne",
+    swordSize: "82 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: true,
+  },
+  {
+    firstname: "Theophile",
+    lastname: "Magnus",
+    biographie:
+      "Philosophe grec devenu gladiateur, il combat avec une stratégie calculée et une précision mathématique.",
+    genre: "Homme",
+    age: 31,
+    gladiatorType: "Dimachaerus",
+    city: "Athènes",
+    swordSize: "78 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: false,
+  },
+  {
+    firstname: "Brayan",
+    lastname: "Celticus",
+    biographie:
+      "Guerrier celte capturé lors d'une bataille, sa férocité naturelle fait de lui un combattant redoutable dans l'arène.",
+    genre: "Homme",
+    age: 25,
+    gladiatorType: "Thraex",
+    city: "Lutèce",
+    swordSize: "85 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: true,
+  },
+  {
+    firstname: "Duncan",
+    lastname: "Britannicus",
+    biographie:
+      "Chef tribal britannique qui s'est volontairement engagé comme gladiateur pour apprendre les tactiques de combat romaines.",
+    genre: "Homme",
+    age: 33,
+    gladiatorType: "Murmillo",
+    city: "Londinium",
+    swordSize: "88 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: false,
+  },
+  {
+    firstname: "Julien",
+    lastname: "Gallicus",
+    biographie:
+      "Ancien forgeron gaulois, sa connaissance des armes et son habileté à les manier font de lui un adversaire imprévisible.",
+    genre: "Homme",
+    age: 29,
+    gladiatorType: "Secutor",
+    city: "Massilia",
+    swordSize: "80 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: true,
+  },
 ];
 
 import type { RequestHandler } from "express";

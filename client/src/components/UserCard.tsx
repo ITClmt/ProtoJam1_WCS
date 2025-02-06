@@ -37,7 +37,7 @@ export default function UserCard({
         }}
         transition={{
           type: "spring",
-          stiffness: 250,
+          stiffness: 300,
           damping: 25,
           duration: 0.1,
         }}
