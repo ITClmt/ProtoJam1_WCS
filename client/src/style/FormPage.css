@@ -53,7 +53,8 @@
   margin-bottom: 0.5rem;
   color: var(--text-color);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-family: Roman SD, serif;
 }
 
 .form-input {
@@ -61,7 +62,7 @@
   padding: 0.75rem;
   border: 2px solid #ddd;
   border-radius: var(--border-radius);
-  font-size: 1rem;
+  height: 3rem;
   transition: var(--transition);
   background-color: white;
 }
