@@ -145,7 +145,7 @@ const gladiators = [
     gladiatorType: "Hoplomachus",
     city: "Ravenne",
     swordSize: "85 cm",
-    profilePicture: "/assets/images/kevinus_pesetus.png",
+    profilePicture: "/assets/images/servius.jpg",
     match: false,
   },
   {

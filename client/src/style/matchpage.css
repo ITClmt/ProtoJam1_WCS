@@ -43,7 +43,7 @@
   gap: 1rem;
   & .message {
     background-color: white;
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     border-radius: 50px;
     color: var(--text-color);
     width: 80%;
@@ -51,7 +51,7 @@
   }
   & .arena {
     background-color: var(--primary-color);
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     border-radius: 50px;
     color: white;
     width: 80%;
