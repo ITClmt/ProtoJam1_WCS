@@ -9,7 +9,7 @@ const gladiators = [
     gladiatorType: "Murmillo",
     city: "Rome",
     swordSize: "85 cm",
-    profilePicture: "server/public/assets/images/maximus_decimus.webp",
+    profilePicture: "/assets/images/maximus_decimus.webp",
   },
   {
     firstname: "Aelia",
@@ -20,7 +20,7 @@ const gladiators = [
     age: 28,
     gladiatorType: "Thraex",
     city: "Pompei",
-    profilePicture: "server/public/assets/images/aelia_vittoria.webp",
+    profilePicture: "/assets/images/aelia_vittoria.webp",
   },
   {
     firstname: "Spartacus",
@@ -31,7 +31,7 @@ const gladiators = [
     gladiatorType: "Dimachaerus",
     city: "Thrace",
     swordSize: "75 cm",
-    profilePicture: "server/public/assets/images/spartacus_thracian.webp",
+    profilePicture: "/assets/images/spartacus_thracian.webp",
   },
   {
     firstname: "Cassia",
