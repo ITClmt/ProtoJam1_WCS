@@ -237,7 +237,7 @@ const gladiators = [
     match: false,
   },
   {
-    firstname: "Clement",
+    firstname: "Clemon",
     lastname: "Augustus",
     biographie:
       "Ancien architecte romain reconverti en gladiateur, il utilise sa connaissance des structures pour anticiper les mouvements de ses adversaires.",
@@ -250,7 +250,7 @@ const gladiators = [
     match: true,
   },
   {
-    firstname: "Theophile",
+    firstname: "Theophane",
     lastname: "Magnus",
     biographie:
       "Philosophe grec devenu gladiateur, il combat avec une stratégie calculée et une précision mathématique.",
@@ -263,7 +263,7 @@ const gladiators = [
     match: false,
   },
   {
-    firstname: "Brayan",
+    firstname: "Brannix",
     lastname: "Celticus",
     biographie:
       "Guerrier celte capturé lors d'une bataille, sa férocité naturelle fait de lui un combattant redoutable dans l'arène.",
@@ -276,7 +276,7 @@ const gladiators = [
     match: true,
   },
   {
-    firstname: "Duncan",
+    firstname: "Duncor",
     lastname: "Britannicus",
     biographie:
       "Chef tribal britannique qui s'est volontairement engagé comme gladiateur pour apprendre les tactiques de combat romaines.",
@@ -289,7 +289,7 @@ const gladiators = [
     match: false,
   },
   {
-    firstname: "Julien",
+    firstname: "Julius",
     lastname: "Gallicus",
     biographie:
       "Ancien forgeron gaulois, sa connaissance des armes et son habileté à les manier font de lui un adversaire imprévisible.",
@@ -309,4 +309,31 @@ const browse: RequestHandler = (req, res) => {
   res.json(gladiators);
 };
 
-export default { browse };
+const read: RequestHandler = (req, res) => {
+  // Vérifier si le paramètre firstname existe
+  if (!req.params.firstname) {
+    res.status(400).json({
+      message: "Missing firstname parameter",
+    });
+    return;
+  }
+
+  // Normalize the search parameter to handle case-insensitivity
+  const searchName = req.params.firstname.toLowerCase().trim();
+
+  // Find gladiator with case-insensitive firstname comparison
+  const gladiator = gladiators.find(
+    (gladiator) => gladiator.firstname.toLowerCase().trim() === searchName,
+  );
+
+  if (!gladiator) {
+    res.status(404).json({
+      message: `Gladiator with name "${req.params.firstname}" not found`,
+    });
+    return;
+  }
+
+  res.json(gladiator);
+};
+
+export default { browse, read };

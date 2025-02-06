@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../style/UserCard.css";
 
 export default function UserCard({
@@ -11,11 +12,15 @@ export default function UserCard({
   handleNext: () => void;
   handlePrevious: () => void;
 }) {
+  const navigate = useNavigate();
   const [exitDirection, setExitDirection] = useState<number>(0);
 
   const handleLike = () => {
     setExitDirection(1);
     setTimeout(handleNext, 10);
+    if (user.match === true) {
+      navigate("/matchpage");
+    }
   };
 
   const handleDislike = () => {

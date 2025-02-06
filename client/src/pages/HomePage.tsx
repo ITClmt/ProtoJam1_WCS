@@ -10,6 +10,9 @@ export default function HomePage() {
   const { userData } = useUser();
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const femaleUsers = users.filter((user) => user.genre === "Femme");
+  const maleUsers = users.filter((user) => user.genre === "Homme");
+
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % users.length);
   };
@@ -22,7 +25,13 @@ export default function HomePage() {
     <div className="home-container">
       <div className="card-container">
         <UserCard
-          user={users[currentIndex]}
+          user={
+            userData?.preferences === "female"
+              ? femaleUsers[currentIndex % femaleUsers.length]
+              : userData?.preferences === "male"
+                ? maleUsers[currentIndex % maleUsers.length]
+                : users[currentIndex]
+          }
           handleNext={handleNext}
           handlePrevious={handlePrevious}
         />

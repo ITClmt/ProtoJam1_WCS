@@ -35,6 +35,7 @@ interface User {
   lastname: string;
   profilePicture: string;
   swordSize: string;
+  match: boolean;
 }
 
 interface UserData {
