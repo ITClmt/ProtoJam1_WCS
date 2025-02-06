@@ -8,6 +8,7 @@ interface GladiatorTypes {
   city: string;
   swordSize: string;
   profilePicture: string;
+  match: boolean;
 }
 
 interface UserData {

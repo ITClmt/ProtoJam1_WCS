@@ -45,3 +45,8 @@ button {
 option {
   font-family: Roman SD, sans-serif;
 }
+
+a {
+  text-decoration: none;
+  list-style: none;
+}

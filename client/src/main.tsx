@@ -13,6 +13,7 @@ import App from "./App";
 import FirstPage from "./pages/FirstPage";
 import FormPage from "./pages/FormPage";
 import HomePage from "./pages/HomePage";
+import MatchPage from "./pages/MatchPage";
 
 // Requests
 import { getAllGladiators } from "./services/request";
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
       {
         path: "/form",
         element: <FormPage />,
+      },
+      {
+        path: "/matchpage",
+        element: <MatchPage />,
+        loader: getAllGladiators,
       },
       {
         path: "/home",
