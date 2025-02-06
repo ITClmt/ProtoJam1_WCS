@@ -10,9 +10,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: RomanAntique, Helvetica, sans-serif, serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.3rem;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   h1,
   h2 {
     font-family: Roman SD, serif;
@@ -40,4 +40,8 @@
 
 button {
   font-family: Roman SD, serif;
+}
+
+option {
+  font-family: Roman SD, sans-serif;
 }
