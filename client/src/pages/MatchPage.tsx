@@ -2,7 +2,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import "../style/matchpage.css";
 
 export default function MatchPage() {
-  const getGladiator = useLoaderData() as GladiatorTypes;
+  const gladiator = useLoaderData() as GladiatorTypes;
 
   return (
     <section
@@ -16,10 +16,7 @@ export default function MatchPage() {
       </Link>
       <div className="match">
         <h1>C'est l'heure du combat !</h1>
-        <p>
-          {getGladiator.match ? getGladiator.firstname : ""}
-          veut aussi t'affronter dans l'arène !
-        </p>
+        <p>{gladiator.firstname} veut aussi t'affronter dans l'arène !</p>
 
         <div className="match-swords">
           <img src="/public/profil_matchlogo.png" alt="matchlogo" />

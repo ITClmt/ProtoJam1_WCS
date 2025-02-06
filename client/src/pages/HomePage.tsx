@@ -18,7 +18,7 @@ export default function HomePage() {
   };
 
   const handlePrevious = () => {
-    setCurrentIndex((prev) => (prev - 1 + users.length) % users.length);
+    setCurrentIndex((prev) => (prev + 1) % users.length);
   };
 
   return (

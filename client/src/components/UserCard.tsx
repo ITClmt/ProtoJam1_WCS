@@ -19,7 +19,7 @@ export default function UserCard({
     setExitDirection(1);
     setTimeout(handleNext, 10);
     if (user.match === true) {
-      navigate("/matchpage");
+      navigate(`/matchpage/${user.firstname}`);
     }
   };
 

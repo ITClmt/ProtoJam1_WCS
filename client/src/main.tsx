@@ -16,7 +16,7 @@ import HomePage from "./pages/HomePage";
 import MatchPage from "./pages/MatchPage";
 
 // Requests
-import { getAllGladiators } from "./services/request";
+import { getAllGladiators, getGladiatorById } from "./services/request";
 
 // Try creating these components in the "pages" folder
 
@@ -41,9 +41,9 @@ const router = createBrowserRouter([
         element: <FormPage />,
       },
       {
-        path: "/matchpage",
+        path: "/matchpage/:firstname",
         element: <MatchPage />,
-        loader: getAllGladiators,
+        loader: ({ params }) => getGladiatorById(String(params.firstname)),
       },
       {
         path: "/home",
