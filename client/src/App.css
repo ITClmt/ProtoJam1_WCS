@@ -11,5 +11,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: RomanAntique, Helvetica, sans-serif, serif;
+  font-size: 18px;
+  line-height: 1.3rem;
+  letter-spacing: 2px;
+  h1,
+  h2 {
+    font-family: Roman SD, serif;
+  }
+}
+
+@font-face {
+  font-family: "Roman SD";
+  src: local("Roman SD"), url("./assets/fonts/roman_sd/Roman%20SD.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "RomanAntique";
+  src: local("RomanAntique"),
+    url("./assets/fonts/RomanAntique/RomanAntique.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RomanAntique-it";
+  src: local("RomanAntique-it"),
+    url("./assets/fonts/RomanAntique/RomanAntique-Italic.ttf")
+    format("truetype");
+}
+
+button {
+  font-family: Roman SD, serif;
 }
