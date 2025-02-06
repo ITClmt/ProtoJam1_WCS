@@ -7,6 +7,13 @@
   position: relative;
 }
 
+.first-page-image {
+  width: 8rem;
+  object-fit: cover;
+  padding-top: 1rem;
+  margin-bottom: -1rem;
+}
+
 .first-page-container::before {
   content: "";
   position: absolute;
@@ -27,7 +34,7 @@
   font-weight: bold;
   color: var(--primary-color);
   text-align: center;
-  margin: 8rem;
+  margin-bottom: 8rem;
 }
 
 .first-page-description {

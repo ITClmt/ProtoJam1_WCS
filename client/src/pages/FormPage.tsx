@@ -1,5 +1,6 @@
 import { type SubmitHandler, useForm } from "react-hook-form";
 import "../style/FormPage.css";
+import { useNavigate } from "react-router-dom";
 import { useUser } from "../context/UserContext";
 
 interface IFormInput {
@@ -39,6 +40,7 @@ enum GladiatorEnum {
 
 export default function FormPage() {
   const { setUserData } = useUser();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -47,6 +49,7 @@ export default function FormPage() {
 
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
     setUserData(data);
+    navigate("/home");
     console.info(data);
   };
 
