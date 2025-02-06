@@ -25,7 +25,14 @@ export default function MatchPage() {
             alt="crossed swords"
             className="crossed-swords"
           />
-          <img src="/public/matchlogo.png" alt="matchlogo" />
+          <div className="match-logo">
+            <div className="match-logo-picture">
+              <img
+                src={`${import.meta.env.VITE_API_URL}${gladiator.profilePicture}`}
+                alt={gladiator.firstname}
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div className="interaction">
