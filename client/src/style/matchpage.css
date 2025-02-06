@@ -1,0 +1,46 @@
+.matchpage-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  & .close-match {
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    padding: 1rem;
+    font-size: 24px;
+  }
+}
+
+.match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 70%;
+  color: white;
+}
+
+.interaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  & .message {
+    background-color: white;
+    padding: 1rem 5rem;
+    border-radius: 50px;
+    color: var(--text-color);
+    width: 80%;
+    text-align: center;
+  }
+  & .arena {
+    background-color: var(--primary-color);
+    padding: 1rem 5rem;
+    border-radius: 50px;
+    color: white;
+    width: 80%;
+    text-align: center;
+  }
+}

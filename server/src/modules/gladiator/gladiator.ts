@@ -10,6 +10,7 @@ const gladiators = [
     city: "Rome",
     swordSize: "85 cm",
     profilePicture: "/assets/images/maximus_decimus.webp",
+    match: false,
   },
   {
     firstname: "Aelia",
@@ -21,6 +22,7 @@ const gladiators = [
     gladiatorType: "Thraex",
     city: "Pompei",
     profilePicture: "/assets/images/aelia_vittoria.webp",
+    match: true,
   },
   {
     firstname: "Spartacus",
@@ -32,6 +34,7 @@ const gladiators = [
     city: "Thrace",
     swordSize: "75 cm",
     profilePicture: "/assets/images/spartacus_thracian.webp",
+    match: false,
   },
   {
     firstname: "Cassia",
@@ -43,6 +46,7 @@ const gladiators = [
     gladiatorType: "Amazon",
     city: "Carthage",
     profilePicture: "/assets/images/cassia_aurelia.webp",
+    match: true,
   },
   {
     firstname: "Titus",
@@ -55,6 +59,7 @@ const gladiators = [
     city: "Alexandrie",
     swordSize: "90 cm",
     profilePicture: "/assets/images/titus_valerius.webp",
+    match: true,
   },
   {
     firstname: "Livia",
@@ -66,6 +71,7 @@ const gladiators = [
     gladiatorType: "Secutor",
     city: "Lugdunum",
     profilePicture: "/assets/images/livia_drusilla.webp",
+    match: false,
   },
   {
     firstname: "Marcus",
@@ -77,6 +83,7 @@ const gladiators = [
     city: "Athènes",
     swordSize: "80 cm",
     profilePicture: "/assets/images/marcus_flavius.webp",
+    match: false,
   },
   {
     firstname: "Draco",
@@ -89,6 +96,7 @@ const gladiators = [
     city: "Massilia",
     swordSize: "70 cm",
     profilePicture: "/images/gladiators/draco.jpg",
+    match: false,
   },
   {
     firstname: "Valeria",
@@ -100,6 +108,7 @@ const gladiators = [
     gladiatorType: "Thraex",
     city: "Syracuse",
     profilePicture: "/images/gladiators/valeria.jpg",
+    match: false,
   },
   {
     firstname: "Gaius",
@@ -112,6 +121,7 @@ const gladiators = [
     city: "Capoue",
     swordSize: "88 cm",
     profilePicture: "/images/gladiators/gaius.jpg",
+    match: true,
   },
   {
     firstname: "Nysa",
@@ -123,6 +133,7 @@ const gladiators = [
     gladiatorType: "Secutor",
     city: "Thèbes",
     profilePicture: "/assets/images/nysa_thebaica.png",
+    match: false,
   },
   {
     firstname: "Servius",
@@ -134,7 +145,8 @@ const gladiators = [
     gladiatorType: "Hoplomachus",
     city: "Ravenne",
     swordSize: "85 cm",
-    profilePicture: "/images/gladiators/servius.jpg",
+    profilePicture: "/assets/images/kevinus_pesetus.png",
+    match: false,
   },
   {
     firstname: "Octavia",
@@ -146,6 +158,20 @@ const gladiators = [
     gladiatorType: "Amazon",
     city: "Corduba",
     profilePicture: "/assets/images/octavia_lucilla.png",
+    match: true,
+  },
+  {
+    firstname: "Kevinus",
+    lastname: "Pesetus",
+    biographie:
+      "Un gladiateur légendaire d'origine modeste ayant grimpé au sommet 'from scratch'. Craint dans l'arène pour sa soif de sang et sa brutalité sans égale.",
+    genre: "Homme",
+    age: 72,
+    gladiatorType: "JavaScriptus",
+    city: "C'est Ciao !",
+    swordSize: "Masterclass",
+    profilePicture: "/assets/images/kevinus_pesetus.png",
+    match: true,
   },
 ];
 

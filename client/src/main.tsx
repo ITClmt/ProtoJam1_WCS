@@ -12,7 +12,7 @@ import FirstPage from "./pages/FirstPage";
 import FormPage from "./pages/FormPage";
 
 // Import additional components for new routes
-import Gladiator from "./pages/Gladiator";
+import MatchPage from "./pages/MatchPage";
 
 // Requests
 import { getAllGladiators } from "./services/request";
@@ -32,17 +32,17 @@ const router = createBrowserRouter([
     element: <App />, // Renders the App component for the home page
     children: [
       {
-        path: "/gladiator",
-        element: <Gladiator />,
-        loader: getAllGladiators,
-      },
-      {
         path: "/",
         element: <FirstPage />,
       },
       {
         path: "/form",
         element: <FormPage />,
+      },
+      {
+        path: "/matchpage",
+        element: <MatchPage />,
+        loader: getAllGladiators,
       },
     ],
   },
