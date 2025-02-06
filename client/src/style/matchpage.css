@@ -20,6 +20,20 @@
   gap: 2rem;
   height: 70%;
   color: white;
+  & .match-swords {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    & img {
+      width: 8rem;
+    }
+    & .crossed-swords {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
 }
 
 .interaction {

@@ -21,6 +21,16 @@ export default function MatchPage() {
           {getGladiator.match ? getGladiator.firstname : ""}
           veut aussi t'affronter dans l'arène !
         </p>
+
+        <div className="match-swords">
+          <img src="/public/matchlogo.png" alt="matchlogo" />
+          <img
+            src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/512px/2694.png"
+            alt="crossed swords"
+            className="crossed-swords"
+          />
+          <img src="/public/matchlogo.png" alt="matchlogo" />
+        </div>
       </div>
       <div className="interaction">
         <Link to={"#"} className="message">
