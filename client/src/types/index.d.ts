@@ -35,3 +35,12 @@ interface User {
   profilePicture: string;
   swordSize: string;
 }
+
+interface UserData {
+  age: string;
+  city: string;
+  firstName: string;
+  gender: string;
+  gladiatorType: string;
+  preferences: string;
+}
