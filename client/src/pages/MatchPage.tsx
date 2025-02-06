@@ -3,7 +3,6 @@ import "../style/matchpage.css";
 
 export default function MatchPage() {
   const getGladiator = useLoaderData() as GladiatorTypes;
-  console.info(getGladiator);
 
   return (
     <section
@@ -12,7 +11,7 @@ export default function MatchPage() {
         backgroundImage: `linear-gradient(rgba(11, 11, 11, 0.7), rgba(11, 11, 11, 0.7)), url('/public/matchpage_background.png')`,
       }}
     >
-      <Link to={"/home"} className="close-match">
+      <Link to={"/home"} className="close-page">
         X
       </Link>
       <div className="match">
