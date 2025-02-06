@@ -42,7 +42,7 @@ const gladiators = [
     age: 25,
     gladiatorType: "Amazon",
     city: "Carthage",
-    profilePicture: "/images/gladiators/cassia.jpg",
+    profilePicture: "/assets/images/cassia_aurelia.webp",
   },
   {
     firstname: "Titus",
@@ -54,7 +54,7 @@ const gladiators = [
     gladiatorType: "Hoplomachus",
     city: "Alexandrie",
     swordSize: "90 cm",
-    profilePicture: "/images/gladiators/titus.jpg",
+    profilePicture: "/assets/images/titus_valerius.webp",
   },
   {
     firstname: "Livia",
@@ -65,7 +65,7 @@ const gladiators = [
     age: 30,
     gladiatorType: "Secutor",
     city: "Lugdunum",
-    profilePicture: "/images/gladiators/livia.jpg",
+    profilePicture: "/assets/images/livia_drusilla.webp",
   },
   {
     firstname: "Marcus",
@@ -76,7 +76,7 @@ const gladiators = [
     gladiatorType: "Retiarius",
     city: "Athènes",
     swordSize: "80 cm",
-    profilePicture: "/images/gladiators/marcus.jpg",
+    profilePicture: "/assets/images/marcus_flavius.webp",
   },
   {
     firstname: "Draco",
@@ -122,7 +122,7 @@ const gladiators = [
     age: 31,
     gladiatorType: "Secutor",
     city: "Thèbes",
-    profilePicture: "/images/gladiators/nysa.jpg",
+    profilePicture: "/assets/images/nysa_thebaica.png",
   },
   {
     firstname: "Servius",
@@ -145,7 +145,7 @@ const gladiators = [
     age: 27,
     gladiatorType: "Amazon",
     city: "Corduba",
-    profilePicture: "/images/gladiators/octavia.jpg",
+    profilePicture: "/assets/images/octavia_lucilla.png",
   },
 ];
 
