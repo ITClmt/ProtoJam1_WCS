@@ -72,7 +72,7 @@ export default function UserCard({
               aria-label="Accepter le profil"
               type="button"
             >
-              🗡️
+              ⚔️
             </motion.button>
           </div>
         </div>
