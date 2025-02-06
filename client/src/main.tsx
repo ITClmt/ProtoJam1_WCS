@@ -12,6 +12,11 @@ import FirstPage from "./pages/FirstPage";
 import FormPage from "./pages/FormPage";
 
 // Import additional components for new routes
+import Gladiator from "./pages/Gladiator";
+
+// Requests
+import { getAllGladiators } from "./services/request";
+
 // Try creating these components in the "pages" folder
 
 // import About from "./pages/About";
@@ -27,14 +32,19 @@ const router = createBrowserRouter([
     element: <App />, // Renders the App component for the home page
     children: [
       {
+        path: "/gladiator",
+        element: <Gladiator />,
+        loader: getAllGladiators,
+      },
+      {
         path: "/",
         element: <FirstPage />,
       },
+      {
+        path: "/form",
+        element: <FormPage />,
+      },
     ],
-  },
-  {
-    path: "/form",
-    element: <FormPage />,
   },
   // Try adding a new route! For example, "/about" with an About component
 ]);
