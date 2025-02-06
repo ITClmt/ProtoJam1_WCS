@@ -11,7 +11,7 @@
   width: 8rem;
   object-fit: cover;
   padding-top: 1rem;
-  margin-bottom: -1rem;
+  margin-bottom: -5rem;
 }
 
 .first-page-container::before {
