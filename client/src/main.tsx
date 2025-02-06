@@ -2,11 +2,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { UserProvider } from "./context/UserContext";
 
 /* ************************************************************************* */
 
 // Import the main app component
 import App from "./App";
+import FirstPage from "./pages/FirstPage";
+import FormPage from "./pages/FormPage";
 
 // Import additional components for new routes
 import Gladiator from "./pages/Gladiator";
@@ -33,6 +36,14 @@ const router = createBrowserRouter([
         element: <Gladiator />,
         loader: getAllGladiators,
       },
+      {
+        path: "/",
+        element: <FirstPage />,
+      },
+      {
+        path: "/form",
+        element: <FormPage />,
+      },
     ],
   },
   // Try adding a new route! For example, "/about" with an About component
@@ -49,7 +60,9 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <UserProvider>
+      <RouterProvider router={router} />
+    </UserProvider>
   </StrictMode>,
 );
 

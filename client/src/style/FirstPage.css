@@ -1,0 +1,50 @@
+.first-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.first-page-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/public/Protojam_1_1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.first-page-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-align: center;
+  margin: 8rem;
+}
+
+.first-page-description {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.first-page-button {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
