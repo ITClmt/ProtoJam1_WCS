@@ -6,9 +6,9 @@ const router = express.Router();
 // Define Your API Routes Here
 /* ************************************************************************* */
 
+import gladiator from "./modules/gladiator/gladiator";
 // Define item-related routes
 import itemActions from "./modules/item/itemActions";
-import gladiator from "./modules/gladiator/gladiator";
 
 router.get("/api/gladiator", gladiator.browse);
 router.get("/api/items", itemActions.browse);
