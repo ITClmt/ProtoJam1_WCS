@@ -116,7 +116,6 @@ export default function FormPage() {
           <select className="form-input" {...register("preferences")}>
             <option value="female">Gladiatrice</option>
             <option value="male">Gladiateur</option>
-            <option value="NB">Non-Binairus</option>
             <option value="other">Pas de préférence</option>
           </select>
         </div>
