@@ -164,7 +164,7 @@ const gladiators = [
     firstname: "Kevinus",
     lastname: "Pesetus",
     biographie:
-      "Un gladiateur légendaire d'origine modeste ayant grimpé au sommet 'from scratch'. Craint dans l'arène pour sa soif de sang et sa brutalité sans égale.",
+      "Un gladiateur légendaire d'origine modeste ayant grimpé au sommet 'from scratch'.",
     genre: "Homme",
     age: 72,
     gladiatorType: "JavaScriptus",
@@ -172,6 +172,69 @@ const gladiators = [
     swordSize: "Masterclass",
     profilePicture: "/assets/images/kevinus_pesetus.png",
     match: true,
+  },
+  {
+    firstname: "Lucius",
+    lastname: "Varius",
+    biographie:
+      "Ingénieur militaire déchu, il utilise ses compétences pour créer des armes innovantes dans l'arène.",
+    genre: "Homme",
+    age: 33,
+    gladiatorType: "Secutor",
+    city: "Antium",
+    swordSize: "82 cm",
+    profilePicture: "/assets/images/lucius_varius.jpg",
+    match: false,
+  },
+  {
+    firstname: "Helena",
+    lastname: "Crassus",
+    biographie:
+      "Aristocrate romaine tombée en disgrâce, elle combat avec la grâce et la détermination d'une guerrière.",
+    genre: "Femme",
+    age: 24,
+    gladiatorType: "Provocatrix",
+    city: "Tusculum",
+    profilePicture: "/assets/images/helena_crassus.jpg",
+    match: true,
+  },
+  {
+    firstname: "Quintus",
+    lastname: "Maro",
+    biographie:
+      "Poète devenu gladiateur, il trouve l'inspiration dans la violence de l'arène.",
+    genre: "Homme",
+    age: 36,
+    gladiatorType: "Retiarius",
+    city: "Verona",
+    swordSize: "78 cm",
+    profilePicture: "/assets/images/quintus_maro.jpg",
+    match: false,
+  },
+  {
+    firstname: "Sabina",
+    lastname: "Flavia",
+    biographie:
+      "Gladiatrice par choix, elle combat pour prouver que les femmes sont aussi capables que les hommes au combat.",
+    genre: "Femme",
+    age: 29,
+    gladiatorType: "Amazon",
+    city: "Antioch",
+    profilePicture: "/assets/images/sabina_flavia.jpg",
+    match: true,
+  },
+  {
+    firstname: "Decimus",
+    lastname: "Corvus",
+    biographie:
+      "Ancien légionnaire devenu gladiateur après avoir été injustement accusé de désertion.",
+    genre: "Homme",
+    age: 45,
+    gladiatorType: "Murmillo",
+    city: "Aquileia",
+    swordSize: "90 cm",
+    profilePicture: "/assets/images/decimus_corvus.jpg",
+    match: false,
   },
 ];
 
