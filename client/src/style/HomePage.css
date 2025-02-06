@@ -21,14 +21,15 @@
   max-width: 500px;
   gap: 1rem;
   padding: 0 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .user-info {
+  position: absolute;
   text-align: center;
   color: #ffffff;
-  margin-top: 4rem;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  top: 39rem;
 }
 
 .user-info h3 {
