@@ -88,7 +88,7 @@ const gladiators = [
     gladiatorType: "Dimachaerus",
     city: "Massilia",
     swordSize: "70 cm",
-    profilePicture: "/images/gladiators/draco.jpg",
+    profilePicture: "/assets/images/draco.jpg",
   },
   {
     firstname: "Valeria",
@@ -99,7 +99,7 @@ const gladiators = [
     age: 26,
     gladiatorType: "Thraex",
     city: "Syracuse",
-    profilePicture: "/images/gladiators/valeria.jpg",
+    profilePicture: "/assets/images/valeria.jpg",
   },
   {
     firstname: "Gaius",
@@ -111,7 +111,7 @@ const gladiators = [
     gladiatorType: "Murmillo",
     city: "Capoue",
     swordSize: "88 cm",
-    profilePicture: "/images/gladiators/gaius.jpg",
+    profilePicture: "/assets/images/gaius.jpg",
   },
   {
     firstname: "Nysa",
@@ -134,7 +134,7 @@ const gladiators = [
     gladiatorType: "Hoplomachus",
     city: "Ravenne",
     swordSize: "85 cm",
-    profilePicture: "/images/gladiators/servius.jpg",
+    profilePicture: "/assets/images/servius.jpg",
   },
   {
     firstname: "Octavia",
