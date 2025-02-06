@@ -22,7 +22,7 @@ export default function MatchPage() {
         </p>
 
         <div className="match-swords">
-          <img src="/public/matchlogo.png" alt="matchlogo" />
+          <img src="/public/profil_matchlogo.png" alt="matchlogo" />
           <img
             src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/512px/2694.png"
             alt="crossed swords"
@@ -33,7 +33,7 @@ export default function MatchPage() {
       </div>
       <div className="interaction">
         <Link to={"#"} className="message">
-          Écrit lui
+          Impose tes règles
         </Link>
         <Link to={"#"} className="arena">
           Choissez votre arène
