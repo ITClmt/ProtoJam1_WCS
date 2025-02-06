@@ -5,6 +5,11 @@ export default function FirstPage() {
   const navigate = useNavigate();
   return (
     <div className="first-page-container">
+      <img
+        src="public/Glader_V2_Centered.png"
+        alt="Glader"
+        className="first-page-image"
+      />
       <h1 className="first-page-title">Glader</h1>
       <p className="first-page-description">
         Trouve ton ame-soeur dans l'arène.
