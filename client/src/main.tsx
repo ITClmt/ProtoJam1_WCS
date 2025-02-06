@@ -8,10 +8,15 @@ import { UserProvider } from "./context/UserContext";
 
 // Import the main app component
 import App from "./App";
-import FirstPage from "./pages/FirstPage";
-import FormPage from "./pages/FormPage";
 
 // Import additional components for new routes
+import FirstPage from "./pages/FirstPage";
+import FormPage from "./pages/FormPage";
+import HomePage from "./pages/HomePage";
+
+// Requests
+import { getAllGladiators } from "./services/request";
+
 // Try creating these components in the "pages" folder
 
 // import About from "./pages/About";
@@ -30,11 +35,16 @@ const router = createBrowserRouter([
         path: "/",
         element: <FirstPage />,
       },
+      {
+        path: "/form",
+        element: <FormPage />,
+      },
+      {
+        path: "/home",
+        element: <HomePage />,
+        loader: getAllGladiators,
+      },
     ],
-  },
-  {
-    path: "/form",
-    element: <FormPage />,
   },
   // Try adding a new route! For example, "/about" with an About component
 ]);
