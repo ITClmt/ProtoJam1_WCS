@@ -40,7 +40,7 @@ export default function MatchPage() {
           Provocatum
         </Link>
         <Link to={"#"} className="arena">
-          Choissez votre arène
+          Choisissez votre arène
         </Link>
         <Link to={"/arene"} className="arena">
           Voir mes adversaires
