@@ -9,6 +9,23 @@ export default function ErrorPage() {
         backgroundImage: `linear-gradient(rgba(11, 11, 11, 0.7), rgba(11, 11, 11, 0.7)), url('/public/errorpage_background.jpg')`,
       }}
     >
+      <div id="leaves">
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+      </div>
       <h1>Vous êtes bien loin de votre arène !</h1>
       <div className="sword">
         <div className="l-container container">
