@@ -12,8 +12,12 @@ export function UserProvider({ children }: { children: ReactNode }) {
     preferences: "other",
   });
 
+  const [matchedProfiles, setMatchedProfiles] = useState<MatchedProfile[]>([]);
+
   return (
-    <UserContext.Provider value={{ userData, setUserData }}>
+    <UserContext.Provider
+      value={{ userData, setUserData, matchedProfiles, setMatchedProfiles }}
+    >
       {children}
     </UserContext.Provider>
   );

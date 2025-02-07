@@ -3,6 +3,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { UserProvider } from "./context/UserContext";
+import MatchedProfiles from "./pages/MatchPage";
 
 /* ************************************************************************* */
 
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
         path: "/home",
         element: <HomePage />,
         loader: getAllGladiators,
+      },
+      {
+        path: "/match",
+        element: <MatchedProfiles />,
       },
     ],
   },
