@@ -95,7 +95,7 @@ const gladiators = [
     gladiatorType: "Dimachaerus",
     city: "Massilia",
     swordSize: "70 cm",
-    profilePicture: "/assets/images/Draco.jpg",
+    profilePicture: "/assets/images/Draco.png",
     match: false,
   },
   {
@@ -107,7 +107,7 @@ const gladiators = [
     age: 26,
     gladiatorType: "Thraex",
     city: "Syracuse",
-    profilePicture: "/assets/images/Valeria.jpg",
+    profilePicture: "/assets/images/Valeria.png",
     match: false,
   },
   {
@@ -120,7 +120,7 @@ const gladiators = [
     gladiatorType: "Murmillo",
     city: "Capoue",
     swordSize: "88 cm",
-    profilePicture: "/assets/images/Gaius.jpg",
+    profilePicture: "/assets/images/Gaius.png",
     match: true,
   },
   {
@@ -132,8 +132,8 @@ const gladiators = [
     age: 31,
     gladiatorType: "Secutor",
     city: "Thèbes",
-    profilePicture: "/assets/images/nysa_thebaica.png",
-    match: false,
+    profilePicture: "/assets/images/nysa_thebaica.webp",
+    match: true,
   },
   {
     firstname: "Servius",
@@ -183,7 +183,7 @@ const gladiators = [
     gladiatorType: "Secutor",
     city: "Antium",
     swordSize: "82 cm",
-    profilePicture: "/assets/images/lucius_varius.jpg",
+    profilePicture: "/assets/images/lucius_varius.png",
     match: false,
   },
   {
@@ -195,7 +195,7 @@ const gladiators = [
     age: 24,
     gladiatorType: "Provocatrix",
     city: "Tusculum",
-    profilePicture: "/assets/images/helena_crassus.jpg",
+    profilePicture: "/assets/images/helena_crassus.png",
     match: true,
   },
   {
@@ -220,7 +220,7 @@ const gladiators = [
     age: 29,
     gladiatorType: "Amazon",
     city: "Antioch",
-    profilePicture: "/assets/images/sabina_flavia.jpg",
+    profilePicture: "/assets/images/sabina_flavia.png",
     match: true,
   },
   {
@@ -233,11 +233,11 @@ const gladiators = [
     gladiatorType: "Murmillo",
     city: "Aquileia",
     swordSize: "90 cm",
-    profilePicture: "/assets/images/decimus_corvus.jpg",
+    profilePicture: "/assets/images/decimus_corvus.png",
     match: false,
   },
   {
-    firstname: "Clemon",
+    firstname: "Clemuscle",
     lastname: "Augustus",
     biographie:
       "Ancien architecte romain reconverti en gladiateur, il utilise sa connaissance des structures pour anticiper les mouvements de ses adversaires.",
@@ -246,7 +246,7 @@ const gladiators = [
     gladiatorType: "Hoplomachus",
     city: "Narbonne",
     swordSize: "82 cm",
-    profilePicture: "/assets/images/default_gladiator.jpg",
+    profilePicture: "/assets/images/cmoi.jpg",
     match: true,
   },
   {
