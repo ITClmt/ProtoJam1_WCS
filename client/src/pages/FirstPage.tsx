@@ -12,7 +12,7 @@ export default function FirstPage() {
       />
       <h1 className="first-page-title">Glader</h1>
       <p className="first-page-description">
-        Trouve ton ame-soeur dans l'arène.
+        Trouve ton âme-soeur dans l'arène.
       </p>
       <p className="first-page-description">
         Crée ton profil et trouve ton duel.

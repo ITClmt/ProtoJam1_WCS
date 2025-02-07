@@ -298,7 +298,7 @@ const gladiators = [
     gladiatorType: "Secutor",
     city: "Massilia",
     swordSize: "80 cm",
-    profilePicture: "/assets/images/default_gladiator.jpg",
+    profilePicture: "/assets/images/julius_gallicus.webp",
     match: true,
   },
 ];

@@ -5,7 +5,11 @@
     url("/public/matchpage_background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
+  & h1 {
+    text-align: center;
+  }
 }
 
 .arena-empty {
@@ -21,6 +25,11 @@
     url("/public/matchpage_background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  & a {
+    margin-top: 2rem;
+    color: white;
+    opacity: 0.3;
+  }
 }
 
 .arena-grid {
@@ -36,6 +45,10 @@
   overflow: hidden;
   backdrop-filter: blur(5px);
   transition: transform 0.3s ease;
+}
+
+.arena-card:last-of-type {
+  margin-bottom: 3rem;
 }
 
 .arena-profile-image {
