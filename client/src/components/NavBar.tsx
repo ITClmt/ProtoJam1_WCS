@@ -5,7 +5,7 @@ export default function NavBar() {
     <nav>
       <ul>
         <li>
-          <Link to="/home">Acceuil</Link>
+          <Link to="/home">Accueil</Link>
         </li>
         <li>
           <Link to="/form">Formulaire</Link>
