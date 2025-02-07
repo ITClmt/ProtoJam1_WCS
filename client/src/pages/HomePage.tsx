@@ -9,10 +9,11 @@ export default function HomePage() {
   const users = useLoaderData() as User[];
   const { userData } = useUser();
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showTopGladiators, setShowTopGladiators] = useState(false);
 
   const femaleUsers = users.filter((user) => user.genre === "Femme");
   const maleUsers = users.filter((user) => user.genre === "Homme");
-
+  const topGladiators = users.slice(-5);
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % users.length);
   };
@@ -26,19 +27,25 @@ export default function HomePage() {
       <div className="card-container">
         <UserCard
           user={
-            userData?.preferences === "female"
-              ? femaleUsers[currentIndex % femaleUsers.length]
-              : userData?.preferences === "male"
-                ? maleUsers[currentIndex % maleUsers.length]
-                : users[currentIndex]
+            showTopGladiators
+              ? topGladiators[currentIndex % topGladiators.length]
+              : userData?.preferences === "female"
+                ? femaleUsers[currentIndex % femaleUsers.length]
+                : userData?.preferences === "male"
+                  ? maleUsers[currentIndex % maleUsers.length]
+                  : users[currentIndex]
           }
           handleNext={handleNext}
           handlePrevious={handlePrevious}
         />
       </div>
       <div className="user-info">
-        <h3>Choisis ton ame-soeur</h3>
-        <p>{userData?.firstName}</p>
+        <button type="button" onClick={() => setShowTopGladiators(true)}>
+          Top Gladiators
+        </button>
+        <button type="button" onClick={() => setShowTopGladiators(false)}>
+          Tout les Gladiators
+        </button>
       </div>
       <NavBar />
     </div>

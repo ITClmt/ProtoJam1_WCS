@@ -28,15 +28,14 @@
   color: #ffffff;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
   margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
-.user-info h3 {
-  margin: 0;
-  font-size: 1.7rem;
-  margin-bottom: 0.5rem;
-}
-
-.user-info p {
-  margin: 0;
-  font-size: 1.5rem;
+.user-info button {
+  background-color: #fffef0;
+  color: #000000;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
 }

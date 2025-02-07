@@ -240,17 +240,17 @@ const gladiators = [
     firstname: "Clemuscle",
     lastname: "Augustus",
     biographie:
-      "Ancien architecte romain reconverti en gladiateur, il utilise sa connaissance des structures pour anticiper les mouvements de ses adversaires.",
+      "Architecte romain devenu gladiateur, utilisant sa connaissance des structures pour vaincre ses adversaires.",
     genre: "Homme",
     age: 28,
     gladiatorType: "Hoplomachus",
-    city: "Narbonne",
+    city: "Seattle",
     swordSize: "82 cm",
     profilePicture: "/assets/images/cmoi.jpg",
     match: true,
   },
   {
-    firstname: "Theophane",
+    firstname: "Theophilus",
     lastname: "Magnus",
     biographie:
       "Philosophe grec devenu gladiateur, il combat avec une stratégie calculée et une précision mathématique.",
@@ -259,7 +259,7 @@ const gladiators = [
     gladiatorType: "Dimachaerus",
     city: "Athènes",
     swordSize: "78 cm",
-    profilePicture: "/assets/images/default_gladiator.jpg",
+    profilePicture: "/assets/images/theophile.webp",
     match: false,
   },
   {
@@ -272,7 +272,7 @@ const gladiators = [
     gladiatorType: "Thraex",
     city: "Lutèce",
     swordSize: "85 cm",
-    profilePicture: "/assets/images/default_gladiator.jpg",
+    profilePicture: "/assets/images/brayan.webp",
     match: true,
   },
   {
