@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../style/UserCard.css";
+import { useUser } from "../context/UserContext";
 
 export default function UserCard({
   user,
@@ -14,11 +15,19 @@ export default function UserCard({
 }) {
   const navigate = useNavigate();
   const [exitDirection, setExitDirection] = useState<number>(0);
-
+  const { matchedProfiles, setMatchedProfiles } = useUser();
   const handleLike = () => {
     setExitDirection(1);
     setTimeout(handleNext, 10);
     if (user.match === true) {
+      const isAlreadyMatched = matchedProfiles.some(
+        (profile) => profile.firstname === user.firstname,
+      );
+
+      if (!isAlreadyMatched) {
+        setMatchedProfiles([...matchedProfiles, user]);
+        console.info("Nouveau match ajouté:", user.firstname);
+      }
       navigate(`/matchpage/${user.firstname}`);
     }
   };

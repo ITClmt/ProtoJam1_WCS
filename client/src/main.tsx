@@ -3,7 +3,6 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { UserProvider } from "./context/UserContext";
-import MatchedProfiles from "./pages/MatchPage";
 
 /* ************************************************************************* */
 
@@ -11,6 +10,7 @@ import MatchedProfiles from "./pages/MatchPage";
 import App from "./App";
 
 // Import additional components for new routes
+import ArenaMatch from "./pages/ArenaMatch";
 import FirstPage from "./pages/FirstPage";
 import FormPage from "./pages/FormPage";
 import HomePage from "./pages/HomePage";
@@ -52,8 +52,8 @@ const router = createBrowserRouter([
         loader: getAllGladiators,
       },
       {
-        path: "/match",
-        element: <MatchedProfiles />,
+        path: "/arene",
+        element: <ArenaMatch />,
       },
     ],
   },

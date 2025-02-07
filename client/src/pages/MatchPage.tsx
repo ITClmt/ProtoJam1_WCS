@@ -42,6 +42,9 @@ export default function MatchPage() {
         <Link to={"#"} className="arena">
           Choissez votre arène
         </Link>
+        <Link to={"/arene"} className="arena">
+          Voir mes adversaires
+        </Link>
       </div>
     </section>
   );
