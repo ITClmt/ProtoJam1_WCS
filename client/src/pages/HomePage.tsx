@@ -13,7 +13,7 @@ export default function HomePage() {
 
   const femaleUsers = users.filter((user) => user.genre === "Femme");
   const maleUsers = users.filter((user) => user.genre === "Homme");
-  const topGladiators = users.slice(-5);
+  const topGladiators = users.slice(-6);
   const handleNext = () => {
     setCurrentIndex((prev) => (prev + 1) % users.length);
   };

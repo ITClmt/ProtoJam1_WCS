@@ -161,19 +161,6 @@ const gladiators = [
     match: true,
   },
   {
-    firstname: "Kevinus",
-    lastname: "Pesetus",
-    biographie:
-      "Un gladiateur légendaire d'origine modeste ayant grimpé au sommet 'from scratch'.",
-    genre: "Homme",
-    age: 72,
-    gladiatorType: "JavaScriptus",
-    city: "C'est Ciao !",
-    swordSize: "Masterclass",
-    profilePicture: "/assets/images/kevinus_pesetus.png",
-    match: true,
-  },
-  {
     firstname: "Lucius",
     lastname: "Varius",
     biographie:
@@ -285,7 +272,7 @@ const gladiators = [
     gladiatorType: "Murmillo",
     city: "Londinium",
     swordSize: "88 cm",
-    profilePicture: "/assets/images/default_gladiator.jpg",
+    profilePicture: "/assets/images/Duncan.png",
     match: false,
   },
   {
@@ -299,6 +286,19 @@ const gladiators = [
     city: "Massilia",
     swordSize: "80 cm",
     profilePicture: "/assets/images/julius_gallicus.webp",
+    match: true,
+  },
+  {
+    firstname: "Kevinus",
+    lastname: "Pesetus",
+    biographie:
+      "Un gladiateur légendaire d'origine modeste ayant grimpé au sommet 'from scratch'.",
+    genre: "Homme",
+    age: 72,
+    gladiatorType: "JavaScriptus",
+    city: "C'est Ciao !",
+    swordSize: "Masterclass",
+    profilePicture: "/assets/images/kevin.webp",
     match: true,
   },
 ];
