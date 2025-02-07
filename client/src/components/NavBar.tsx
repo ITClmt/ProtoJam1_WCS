@@ -11,6 +11,9 @@ export default function NavBar() {
           <Link to="/form">Form</Link>
         </li>
         <li>
+          <Link to="/profile">Profile</Link>
+        </li>
+        <li>
           <Link to="/arene">Arena</Link>
         </li>
       </ul>

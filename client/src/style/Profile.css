@@ -1,0 +1,67 @@
+.div-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.div-logo > h2 {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.information > img {
+  width: 75%;
+  margin-top: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.profile-information {
+  background-color: rgba(0, 0, 0, 0.439);
+  border-radius: 9px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.profile-information > p {
+  background-color: rgba(248, 239, 219, 0.487);
+  border-radius: 9px;
+  border: solid 1px rgb(231, 227, 217);
+  padding: 0.1rem 1rem;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.Welcome {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.background-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  & .close-page {
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    padding: 1rem;
+    font-size: 24px;
+  }
+}

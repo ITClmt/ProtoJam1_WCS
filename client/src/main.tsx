@@ -16,6 +16,7 @@ import FirstPage from "./pages/FirstPage";
 import FormPage from "./pages/FormPage";
 import HomePage from "./pages/HomePage";
 import MatchPage from "./pages/MatchPage";
+import Profile from "./pages/Profile";
 
 // Requests
 import { getAllGladiators, getGladiatorById } from "./services/request";
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
         path: "/home",
         element: <HomePage />,
         loader: getAllGladiators,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
       },
       {
         path: "/arene",
