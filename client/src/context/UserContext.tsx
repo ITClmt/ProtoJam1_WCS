@@ -9,7 +9,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
     firstName: "Tototus",
     gender: "Gladiateur",
     gladiatorType: "Thraex",
-    preferences: "Gladiatrice",
+    preferences: "other",
   });
 
   const [matchedProfiles, setMatchedProfiles] = useState<MatchedProfile[]>([]);

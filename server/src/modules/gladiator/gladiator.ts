@@ -10,6 +10,7 @@ const gladiators = [
     city: "Rome",
     swordSize: "85 cm",
     profilePicture: "/assets/images/maximus_decimus.webp",
+    match: false,
   },
   {
     firstname: "Aelia",
@@ -21,6 +22,7 @@ const gladiators = [
     gladiatorType: "Thraex",
     city: "Pompei",
     profilePicture: "/assets/images/aelia_vittoria.webp",
+    match: true,
   },
   {
     firstname: "Spartacus",
@@ -32,6 +34,7 @@ const gladiators = [
     city: "Thrace",
     swordSize: "75 cm",
     profilePicture: "/assets/images/spartacus_thracian.webp",
+    match: false,
   },
   {
     firstname: "Cassia",
@@ -43,6 +46,7 @@ const gladiators = [
     gladiatorType: "Amazon",
     city: "Carthage",
     profilePicture: "/assets/images/cassia_aurelia.webp",
+    match: true,
   },
   {
     firstname: "Titus",
@@ -55,6 +59,7 @@ const gladiators = [
     city: "Alexandrie",
     swordSize: "90 cm",
     profilePicture: "/assets/images/titus_valerius.webp",
+    match: true,
   },
   {
     firstname: "Livia",
@@ -66,6 +71,7 @@ const gladiators = [
     gladiatorType: "Secutor",
     city: "Lugdunum",
     profilePicture: "/assets/images/livia_drusilla.webp",
+    match: false,
   },
   {
     firstname: "Marcus",
@@ -77,6 +83,7 @@ const gladiators = [
     city: "Athènes",
     swordSize: "80 cm",
     profilePicture: "/assets/images/marcus_flavius.webp",
+    match: false,
   },
   {
     firstname: "Draco",
@@ -88,7 +95,8 @@ const gladiators = [
     gladiatorType: "Dimachaerus",
     city: "Massilia",
     swordSize: "70 cm",
-    profilePicture: "/assets/images/draco.jpg",
+    profilePicture: "/assets/images/Draco.jpg",
+    match: false,
   },
   {
     firstname: "Valeria",
@@ -99,7 +107,8 @@ const gladiators = [
     age: 26,
     gladiatorType: "Thraex",
     city: "Syracuse",
-    profilePicture: "/assets/images/valeria.jpg",
+    profilePicture: "/assets/images/Valeria.jpg",
+    match: false,
   },
   {
     firstname: "Gaius",
@@ -111,7 +120,8 @@ const gladiators = [
     gladiatorType: "Murmillo",
     city: "Capoue",
     swordSize: "88 cm",
-    profilePicture: "/assets/images/gaius.jpg",
+    profilePicture: "/assets/images/Gaius.jpg",
+    match: true,
   },
   {
     firstname: "Nysa",
@@ -123,6 +133,7 @@ const gladiators = [
     gladiatorType: "Secutor",
     city: "Thèbes",
     profilePicture: "/assets/images/nysa_thebaica.png",
+    match: false,
   },
   {
     firstname: "Servius",
@@ -135,6 +146,7 @@ const gladiators = [
     city: "Ravenne",
     swordSize: "85 cm",
     profilePicture: "/assets/images/servius.jpg",
+    match: false,
   },
   {
     firstname: "Octavia",
@@ -146,6 +158,148 @@ const gladiators = [
     gladiatorType: "Amazon",
     city: "Corduba",
     profilePicture: "/assets/images/octavia_lucilla.png",
+    match: true,
+  },
+  {
+    firstname: "Kevinus",
+    lastname: "Pesetus",
+    biographie:
+      "Un gladiateur légendaire d'origine modeste ayant grimpé au sommet 'from scratch'.",
+    genre: "Homme",
+    age: 72,
+    gladiatorType: "JavaScriptus",
+    city: "C'est Ciao !",
+    swordSize: "Masterclass",
+    profilePicture: "/assets/images/kevinus_pesetus.png",
+    match: true,
+  },
+  {
+    firstname: "Lucius",
+    lastname: "Varius",
+    biographie:
+      "Ingénieur militaire déchu, il utilise ses compétences pour créer des armes innovantes dans l'arène.",
+    genre: "Homme",
+    age: 33,
+    gladiatorType: "Secutor",
+    city: "Antium",
+    swordSize: "82 cm",
+    profilePicture: "/assets/images/lucius_varius.jpg",
+    match: false,
+  },
+  {
+    firstname: "Helena",
+    lastname: "Crassus",
+    biographie:
+      "Aristocrate romaine tombée en disgrâce, elle combat avec la grâce et la détermination d'une guerrière.",
+    genre: "Femme",
+    age: 24,
+    gladiatorType: "Provocatrix",
+    city: "Tusculum",
+    profilePicture: "/assets/images/helena_crassus.jpg",
+    match: true,
+  },
+  {
+    firstname: "Quintus",
+    lastname: "Maro",
+    biographie:
+      "Poète devenu gladiateur, il trouve l'inspiration dans la violence de l'arène.",
+    genre: "Homme",
+    age: 36,
+    gladiatorType: "Retiarius",
+    city: "Verona",
+    swordSize: "78 cm",
+    profilePicture: "/assets/images/quintus_maro.jpg",
+    match: false,
+  },
+  {
+    firstname: "Sabina",
+    lastname: "Flavia",
+    biographie:
+      "Gladiatrice par choix, elle combat pour prouver que les femmes sont aussi capables que les hommes au combat.",
+    genre: "Femme",
+    age: 29,
+    gladiatorType: "Amazon",
+    city: "Antioch",
+    profilePicture: "/assets/images/sabina_flavia.jpg",
+    match: true,
+  },
+  {
+    firstname: "Decimus",
+    lastname: "Corvus",
+    biographie:
+      "Ancien légionnaire devenu gladiateur après avoir été injustement accusé de désertion.",
+    genre: "Homme",
+    age: 45,
+    gladiatorType: "Murmillo",
+    city: "Aquileia",
+    swordSize: "90 cm",
+    profilePicture: "/assets/images/decimus_corvus.jpg",
+    match: false,
+  },
+  {
+    firstname: "Clemon",
+    lastname: "Augustus",
+    biographie:
+      "Ancien architecte romain reconverti en gladiateur, il utilise sa connaissance des structures pour anticiper les mouvements de ses adversaires.",
+    genre: "Homme",
+    age: 28,
+    gladiatorType: "Hoplomachus",
+    city: "Narbonne",
+    swordSize: "82 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: true,
+  },
+  {
+    firstname: "Theophane",
+    lastname: "Magnus",
+    biographie:
+      "Philosophe grec devenu gladiateur, il combat avec une stratégie calculée et une précision mathématique.",
+    genre: "Homme",
+    age: 31,
+    gladiatorType: "Dimachaerus",
+    city: "Athènes",
+    swordSize: "78 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: false,
+  },
+  {
+    firstname: "Brannix",
+    lastname: "Celticus",
+    biographie:
+      "Guerrier celte capturé lors d'une bataille, sa férocité naturelle fait de lui un combattant redoutable dans l'arène.",
+    genre: "Homme",
+    age: 25,
+    gladiatorType: "Thraex",
+    city: "Lutèce",
+    swordSize: "85 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: true,
+  },
+  {
+    firstname: "Duncor",
+    lastname: "Britannicus",
+    biographie:
+      "Chef tribal britannique qui s'est volontairement engagé comme gladiateur pour apprendre les tactiques de combat romaines.",
+    genre: "Homme",
+    age: 33,
+    gladiatorType: "Murmillo",
+    city: "Londinium",
+    swordSize: "88 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: false,
+  },
+  {
+    firstname: "Julius",
+    lastname: "Gallicus",
+    biographie:
+      "Ancien forgeron gaulois, sa connaissance des armes et son habileté à les manier font de lui un adversaire imprévisible.",
+    genre: "Homme",
+    age: 29,
+    gladiatorType: "Secutor",
+    city: "Massilia",
+    swordSize: "80 cm",
+    profilePicture: "/assets/images/default_gladiator.jpg",
+    match: true,
   },
 ];
 
@@ -155,4 +309,31 @@ const browse: RequestHandler = (req, res) => {
   res.json(gladiators);
 };
 
-export default { browse };
+const read: RequestHandler = (req, res) => {
+  // Vérifier si le paramètre firstname existe
+  if (!req.params.firstname) {
+    res.status(400).json({
+      message: "Missing firstname parameter",
+    });
+    return;
+  }
+
+  // Normalize the search parameter to handle case-insensitivity
+  const searchName = req.params.firstname.toLowerCase().trim();
+
+  // Find gladiator with case-insensitive firstname comparison
+  const gladiator = gladiators.find(
+    (gladiator) => gladiator.firstname.toLowerCase().trim() === searchName,
+  );
+
+  if (!gladiator) {
+    res.status(404).json({
+      message: `Gladiator with name "${req.params.firstname}" not found`,
+    });
+    return;
+  }
+
+  res.json(gladiator);
+};
+
+export default { browse, read };
