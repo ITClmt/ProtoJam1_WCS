@@ -25,8 +25,12 @@ export default function ErrorPage() {
         <i />
         <i />
         <i />
+        <i />
+        <i />
+        <i />
       </div>
-      <h1>Vous êtes bien loin de votre arène !</h1>
+      <h1>404 NOT FOUND</h1>
+      <h2>Vous êtes bien loin de votre arène !</h2>
       <div className="sword">
         <div className="l-container container">
           <div className="l-sword">
@@ -47,7 +51,7 @@ export default function ErrorPage() {
       </div>
       <div>
         <Link to={"/home"}>
-          <button type="button">Retour à l'acceuil</button>
+          <button type="button">Retour à l'accueil</button>
         </Link>
       </div>
     </section>

@@ -77,7 +77,7 @@ export default function FormPage() {
 
         <div className="form-group">
           <label className="form-label" htmlFor="age">
-            Quel est ton age ?
+            Quel est ton âge ?
           </label>
           <input
             type="number"
@@ -93,7 +93,7 @@ export default function FormPage() {
                 message: "L'âge maximum est de 100 ans",
               },
             })}
-            placeholder="Ton age"
+            placeholder="Ton âge"
           />
           {errors.age && <p className="form-error">{errors.age.message}</p>}
         </div>
