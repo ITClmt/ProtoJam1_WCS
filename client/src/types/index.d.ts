@@ -22,6 +22,9 @@ interface UserData {
 interface UserContextType {
   userData: UserData | null;
   setUserData: (data: UserData) => void;
+  matchedProfiles: MatchedProfile[];
+  setMatchedProfiles: (data: MatchedProfile[]) => void;
+  // setMatchedProfiles: React.Dispatch<React.SetStateAction<MatchedProfile[]>>; ce que propose ia
 }
 
 interface User {
@@ -43,4 +46,15 @@ interface UserData {
   gender: string;
   gladiatorType: string;
   preferences: string;
+}
+
+interface MatchedProfile {
+  id: number;
+  name: string;
+  age: number;
+  city: string;
+  gender: string;
+  gladiatorType: string;
+  profilePicture: string;
+  biographie: string;
 }
