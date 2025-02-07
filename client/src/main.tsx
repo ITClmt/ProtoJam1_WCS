@@ -10,6 +10,8 @@ import { UserProvider } from "./context/UserContext";
 import App from "./App";
 
 // Import additional components for new routes
+import ArenaMatch from "./pages/ArenaMatch";
+import ErrorPage from "./pages/ErrorPage";
 import FirstPage from "./pages/FirstPage";
 import FormPage from "./pages/FormPage";
 import HomePage from "./pages/HomePage";
@@ -32,6 +34,7 @@ const router = createBrowserRouter([
   {
     path: "/", // The root path
     element: <App />, // Renders the App component for the home page
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -54,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
+      },
+      {
+        path: "/arene",
+        element: <ArenaMatch />,
       },
     ],
   },

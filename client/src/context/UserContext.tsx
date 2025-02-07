@@ -12,7 +12,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
     preferences: "other",
   });
 
-  const [matchedProfiles, setMatchedProfiles] = useState<MatchedProfile[]>([]);
+  const [matchedProfiles, setMatchedProfiles] = useState<Gladiator[]>([]);
 
   return (
     <UserContext.Provider

@@ -11,6 +11,17 @@ interface GladiatorTypes {
   match: boolean;
 }
 
+interface Gladiator {
+  id: number;
+  name: string;
+  age: number;
+  city: string;
+  gender: string;
+  gladiatorType: string;
+  profilePicture: string;
+  biographie: string;
+}
+
 interface UserData {
   firstName: string;
   age: number;
@@ -48,15 +59,4 @@ interface UserData {
   gender: string;
   gladiatorType: string;
   preferences: string;
-}
-
-interface MatchedProfile {
-  id: number;
-  name: string;
-  age: number;
-  city: string;
-  gender: string;
-  gladiatorType: string;
-  profilePicture: string;
-  biographie: string;
 }
